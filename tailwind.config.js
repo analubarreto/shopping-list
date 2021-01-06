@@ -2,19 +2,33 @@ const production = !process.env.ROLLUP_WATCH;
 
 module.exports = {
   theme: {
-    colors: {
-      lightBrown: '#DEC9BC',
-      green: '#589431',
-      red: '#ED7459',
-      darkGray: '#404040',
-      lightPink: '#FFFEE5',
-      wihte: '#FFFFFF'
-    },
     fontFamily: {
       // font-body
       body: ['Source Sans Pro'],
       // font-title
       title: ['Montserrat']
+    },
+    extend: {
+      colors: {
+        brown: {
+          dark: '#615346',
+          DEFAULT: '#8f7b69',
+          light: '#dec9bc'
+        },
+        green: {
+          DEFAULT: '#589431',
+        },
+        red: {
+          DEFAULT: '#ed7459',
+          light: '#fffee5',
+        },
+        gray: {
+          DEFAULT: '#404040',
+        },
+        white: {
+          DEFAULT: '#ffffff'
+        }
+      },
     }
   },
   extend: {
