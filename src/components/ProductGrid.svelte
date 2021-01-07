@@ -4,7 +4,7 @@
 	export let products: Object[];
 </script>
 
-<main class="grid lg:grid-cols-3 md:grid-cols-2 gap-4">
+<main class="grid lg:grid-cols-3 md:grid-cols-2 lg:gap-5 gap-4">
 	{#each products as fruit}
 		<ProductCard
 			id={fruit.id}
