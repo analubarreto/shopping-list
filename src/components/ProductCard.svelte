@@ -22,6 +22,8 @@
 		<p class="text-brown-dark">{fruitPrice}.00<small>{unit}</small></p>
 	</div>
 	<div class="mt-4">
-		<Button url={$url(`/products/${1}`)} on:click={dispatch('showdetails', id)}>Details</Button>
+		<Button url={$url(`/products/${id}`)} on:click={dispatch('showdetails', id)}>
+			Details
+		</Button>
 	</div>
 </div>
