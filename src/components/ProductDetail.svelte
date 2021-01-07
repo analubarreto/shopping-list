@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { scale } from 'svelte/transition';
 	import { onDestroy } from 'svelte';
 	import { url } from '@roxi/routify';
 	import fruits from '../stores/product-store.js';
@@ -18,7 +19,7 @@
 	});
 </script>
 
-<main class="flex flex-col justify-center items-center">
+<main class="flex flex-col justify-center items-center" transition:scale>
 	<section class="mb-10">
 		<img src={selectedProduct.imgUrl} alt={selectedProduct.fruitName} />
 	</section>
