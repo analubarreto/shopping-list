@@ -1,7 +1,7 @@
 <script lang="ts">
-	import fruits from '../stores/product-store.js';
+	import { scale } from 'svelte/transition';
+	import { flip } from 'svelte/animate';
 	import ProductCard from './ProductCard.svelte';
-	import Input from './Input.svelte';
 	import Toggle from './Toggle.svelte';
 
 	export let products: Object[];
@@ -19,14 +19,16 @@
 	<Toggle on:select={setFilter} />
 </section>
 <main class="grid lg:grid-cols-3 md:grid-cols-2 lg:gap-5 gap-4">
-	{#each filteredProducts as fruit}
-		<ProductCard
-			id={fruit.id}
-			fruitName={fruit.fruitName}
-			fruitPrice={`R$ ${fruit.fruitPrice}`}
-			unit={fruit.unit}
-			imgUrl={fruit.imgUrl}
-			isOrganic={fruit.isOrganic}
-			on:showdetails />
+	{#each filteredProducts as fruit (fruit.id)}
+		<div transition:scale animate:flip={{ duration: 400 }}>
+			<ProductCard
+				id={fruit.id}
+				fruitName={fruit.fruitName}
+				fruitPrice={`R$ ${fruit.fruitPrice}`}
+				unit={fruit.unit}
+				imgUrl={fruit.imgUrl}
+				isOrganic={fruit.isOrganic}
+				on:showdetails />
+		</div>
 	{/each}
 </main>
