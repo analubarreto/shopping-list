@@ -16,7 +16,6 @@
 </script>
 
 <section class="justify-self-start self-start mb-5 flex sm:flex-col">
-	<Input inputLabel="Search" inputPlaceholder="Enter the name of your item" />
 	<Toggle on:select={setFilter} />
 </section>
 <main class="grid lg:grid-cols-3 md:grid-cols-2 lg:gap-5 gap-4">
