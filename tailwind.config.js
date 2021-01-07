@@ -32,6 +32,11 @@ module.exports = {
       },
     }
   },
+  variants: {
+    extend: {
+      textColor: ['visited']
+    }
+  },
   extend: {
     borderRadius: {
       'sm': '0.313rem',

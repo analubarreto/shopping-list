@@ -19,9 +19,9 @@
 </script>
 
 <main class="flex flex-col justify-center items-center">
-	<section><img src="" alt="" /></section>
+	<section><img src={selectedProduct.imgUrl} alt="" /></section>
 	<section
-		class="bg-brown-light mb-4 p-10 flex flex-col justify-center items-center bg-brown-light w-6/12 md:w-10/12 sm:w-11/12 rounded-md">
+		class="bg-brown-light mb-4 p-10 flex flex-col justify-center items-center bg-brown-light lg:w-6/12 md:w-11/12 rounded-md">
 		<span class="justify-self-start self-end"><Tag
 				isOrganic={selectedProduct.isOrganic} /></span>
 		<div class="flex flex-col justify-center items-center">

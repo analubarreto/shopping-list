@@ -8,8 +8,10 @@
 	export let fruitName: string;
 	export let fruitPrice: Number;
 	export let unit: string;
-	export let imgUrl: any;
+	export let imgUrl: string;
 	export let isOrganic: boolean;
+
+	$: console.log(imgUrl);
 
 	const dispatch = createEventDispatcher();
 </script>

@@ -6,14 +6,16 @@ const fruits = writable([
     fruitName: 'Avocado',
     fruitPrice: 5,
     unit: 'unit',
-    isOrganic: true
+    isOrganic: true,
+    imgUrl: '../../assets/images/avocado.png',
   },
   {
     id: 'fruit2',
     fruitName: 'Red Apple',
     fruitPrice: 3,
     unit: 'kg',
-    isOrganic: 'false'
+    isOrganic: false,
+    imgUrl: '../../assets/images/apples.png',
   },
   {
     id: 'fruit3',
@@ -21,6 +23,7 @@ const fruits = writable([
     fruitPrice: 16,
     unit: 'kg',
     isOrganic: true,
+    imgUrl: '../../assets/images/green-apple.png',
   },
   {
     id: 'fruit4',
@@ -28,6 +31,7 @@ const fruits = writable([
     fruitPrice: 2,
     unit: 'unit',
     isOrganic: false,
+    imgUrl: '../../assets/images/pineapples.png',
   },
   {
     id: 'fruit5',
@@ -35,6 +39,7 @@ const fruits = writable([
     fruitPrice: 12,
     unit: 'kg',
     isOrganic: true,
+    imgUrl: '../../assets/images/blueberry.png',
   },
   {
     id: 'fruit6',
@@ -42,6 +47,7 @@ const fruits = writable([
     fruitPrice: 10,
     unit: 'box',
     isOrganic: true,
+    imgUrl: '../../assets/images/cherry.png',
   },
   {
     id: 'fruit7',
@@ -49,6 +55,7 @@ const fruits = writable([
     fruitPrice: 2,
     unit: 'kg',
     isOrganic: false,
+    imgUrl: '../../assets/images/banana.png',
   },
   {
     id: 'fruit8',
@@ -56,13 +63,15 @@ const fruits = writable([
     fruitPrice: 7,
     unit: 'box',
     isOrganic: false,
+    imgUrl: '../../assets/images/green-grapes.png',
   },
   {
     id: 'fruit9',
     fruitName: 'Orange',
     fruitPrice: 8,
     unit: 'kg',
-    isOrganic: true
+    isOrganic: true,
+    imgUrl: '../../assets/images/orange.png'
   },
 ]);
 
