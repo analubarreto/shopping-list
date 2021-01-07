@@ -1,6 +1,5 @@
 <script lang="ts">
 	import { url } from '@roxi/routify';
-	import { createEventDispatcher } from 'svelte';
 	import Button from './Button.svelte';
 	import Tag from './Tag.svelte';
 
@@ -10,10 +9,6 @@
 	export let unit: string;
 	export let imgUrl: string;
 	export let isOrganic: boolean;
-
-	$: console.log(imgUrl);
-
-	const dispatch = createEventDispatcher();
 </script>
 
 <div class="flex flex-col justify-center items-center bg-brown-light w-72 h-80 rounded-md">
@@ -24,8 +19,6 @@
 		<p class="text-brown-dark">{fruitPrice}.00<small>{unit}</small></p>
 	</div>
 	<div class="mt-4">
-		<Button url={$url(`/products/${id}`)} on:click={dispatch('showdetails', id)}>
-			Details
-		</Button>
+		<Button url={$url(`/products/${id}`)}>Details</Button>
 	</div>
 </div>

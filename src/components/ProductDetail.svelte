@@ -19,7 +19,9 @@
 </script>
 
 <main class="flex flex-col justify-center items-center">
-	<section><img src={selectedProduct.imgUrl} alt="" /></section>
+	<section class="mb-10">
+		<img src={selectedProduct.imgUrl} alt={selectedProduct.fruitName} />
+	</section>
 	<section
 		class="bg-brown-light mb-4 p-10 flex flex-col justify-center items-center bg-brown-light lg:w-6/12 md:w-11/12 rounded-md">
 		<span class="justify-self-start self-end"><Tag
