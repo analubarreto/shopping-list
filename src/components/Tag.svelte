@@ -1,5 +1,5 @@
 <script lang="ts">
-	export let isOrganic: boolean = false;
+	export let isOrganic: boolean;
 </script>
 
 {#if isOrganic}

@@ -6,54 +6,63 @@ const fruits = writable([
     fruitName: 'Avocado',
     fruitPrice: 5,
     unit: 'unit',
+    isOrganic: true
   },
   {
     id: 'fruit2',
     fruitName: 'Red Apple',
     fruitPrice: 3,
     unit: 'kg',
+    isOrganic: 'false'
   },
   {
     id: 'fruit3',
     fruitName: 'Green Apple',
     fruitPrice: 16,
     unit: 'kg',
+    isOrganic: true,
   },
   {
     id: 'fruit4',
     fruitName: 'Pineapple',
     fruitPrice: 2,
     unit: 'unit',
+    isOrganic: false,
   },
   {
     id: 'fruit5',
     fruitName: 'Blue Berry',
     fruitPrice: 12,
     unit: 'kg',
+    isOrganic: true,
   },
   {
     id: 'fruit6',
     fruitName: 'Cherry',
     fruitPrice: 10,
     unit: 'box',
+    isOrganic: true,
   },
   {
     id: 'fruit7',
     fruitName: 'Banana',
     fruitPrice: 2,
     unit: 'kg',
+    isOrganic: false,
   },
   {
     id: 'fruit8',
     fruitName: 'Green Grapes',
     fruitPrice: 7,
     unit: 'box',
+    isOrganic: false,
   },
   {
     id: 'fruit9',
     fruitName: 'Orange',
     fruitPrice: 8,
     unit: 'kg',
+    isOrganic: true
   },
 ]);
 

@@ -13,6 +13,7 @@
 		const routeParam: string = route.substr(10, lastChar);
 		products.forEach((product) => {
 			if (product.id === routeParam) {
+				// @ts-ignore
 				pageData.id = product.id;
 			}
 		});
